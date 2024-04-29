@@ -6,9 +6,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_ukq2q"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -124, -92, 0, 0, 0, 0, 2082, -74, 0, 0, 0, 0, 2082, 1191, 0, 0, 0, 0, -130, 1209, 0, 0, 0, 0, -124, -92)
+"points": PackedVector2Array(0, 0, 0, 0, -255, -68, 0, 0, 0, 0, 395, -345, 0, 0, 0, 0, 783, -214, 0, 0, 0, 0, 1448, -421, 0, 0, 0, 0, 2078, -320, 0, 0, 0, 0, 2174, 134, 0, 0, 0, 0, 2179, 733, 0, 0, 0, 0, 2043, 1162, 0, 0, 0, 0, 1761, 1298, 0, 0, 0, 0, 1262, 1242, 0, 0, 0, 0, 834, 1378, 0, 0, 0, 0, 446, 1318, 0, 0, 0, 0, 214, 1172, 0, 0, 0, 0, -205, 1278, 0, 0, 0, 0, -260, 985, 0, 0, 0, 0, -200, 683, 0, 0, 0, 0, -451, 376, 0, 0, 0, 0, -255, -68)
 }
-point_count = 5
+point_count = 18
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -32,8 +32,14 @@ curve = SubResource("Curve2D_ukq2q")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
 unique_name_in_owner = true
-position = Vector2(-124, -92)
-rotation = 0.00815938
+position = Vector2(-255, -68)
+rotation = -0.402848
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-255, -68)
+rotation = -0.402848
+scale = Vector2(4.44879, 19.8434)
 
 [node name="PineTree" parent="." instance=ExtResource("2_qlr0a")]
 position = Vector2(444, 577)
